@@ -1,0 +1,96 @@
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  background-color: #c1bdba;
+  padding: 0 2rem;
+}
+
+nav .logo {
+  width: 70px;
+  height: 70px;
+}
+
+nav .main_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  gap: 2rem;
+}
+
+nav .main_nav li {
+  font-size: 24px;
+}
+nav a {
+  color: black;
+  transition: color 2ms ease-in;
+}
+
+nav .main_nav li:hover a {
+  color: #195c68;
+  cursor: pointer;
+}
+
+.down_button {
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  left: -3px;
+  top: 3px;
+}
+
+.burger_menu {
+  display: none;
+  visibility: hidden;
+}
+
+.ant-dropdown {
+  border: 1px solid #195c68;
+}
+.ant-dropdown ul {
+  border-radius: 0 !important;
+  background-color: red;
+  padding: 0 !important;
+}
+
+.ant-dropdown ul li a {
+  font-size: 24px;
+  color: #195c68 !important;
+}
+
+.ant-dropdown ul li:hover {
+  background-color: #195c68 !important;
+  border-radius: 0 !important;
+}
+.ant-dropdown ul li a:hover {
+  cursor: pointer;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .burger_menu {
+    display: block;
+    visibility: visible;
+  }
+  .burger_menu,
+  .burger_menu span,
+  .burger_menu span svg,
+  .burger_menu_close span svg,
+  .burger_menu_close,
+  .burger_menu_close span {
+    width: 2rem !important;
+    height: 2rem !important;
+    border: none;
+    background-color: transparent;
+  }
+
+  .burger_menu:hover,
+  .burger_menu_close:hover {
+    cursor: pointer;
+  }
+}
