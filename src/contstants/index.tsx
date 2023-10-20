@@ -58,9 +58,7 @@ export interface Painting {
 export const items: MenuProps['items'] = [
   {
     key: '1',
-    label: (
-      <NavLink to='/NavLinkrtistry/collection/Non Finito'>Non Finito</NavLink>
-    ),
+    label: <NavLink to='/artistry/collection/Non Finito'>Non Finito</NavLink>,
   },
   {
     key: '2',
