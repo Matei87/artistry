@@ -15,7 +15,7 @@ const Collections: FC = (): JSX.Element => {
                   <h2>{title}</h2>
                   <hr />
                   <p>{description}</p>
-                  <Link to={`/collection/${title}`}>See more</Link>
+                  <Link to={`/artistry/collection/${title}`}>See more</Link>
                 </div>
               </div>
             </>
