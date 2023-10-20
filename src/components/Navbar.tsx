@@ -12,12 +12,15 @@ const Navbar: FC = (): JSX.Element => {
 
   return (
     <nav>
-      <NavLink to='/' className={({ isActive }) => (isActive ? 'active' : '')}>
+      <NavLink
+        to='/artistry/'
+        className={({ isActive }) => (isActive ? 'active' : '')}
+      >
         <img className='logo' src={Logo} alt='logo' />
       </NavLink>
       <ul className='main_nav'>
         <li>
-          <NavLink to='/'>Home</NavLink>
+          <NavLink to='/artistry/'>Home</NavLink>
         </li>
         <li>
           <Dropdown menu={{ items }}>
@@ -30,7 +33,7 @@ const Navbar: FC = (): JSX.Element => {
           </Dropdown>
         </li>
         <li>
-          <HashLink to='#contact'>Contact</HashLink>
+          <HashLink to='/artistry/#contact'>Contact</HashLink>
         </li>
       </ul>
 

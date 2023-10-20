@@ -58,7 +58,7 @@ export const items: MenuProps['items'] = [
   {
     key: '1',
     label: (
-      <a rel='noopener noreferrer' href='/collection/Non Finito'>
+      <a rel='noopener noreferrer' href='/artistry/collection/Non Finito'>
         Non Finito
       </a>
     ),
@@ -66,7 +66,10 @@ export const items: MenuProps['items'] = [
   {
     key: '2',
     label: (
-      <a rel='noopener noreferrer' href='/collection/Harmonies of Creation'>
+      <a
+        rel='noopener noreferrer'
+        href='/artistry/collection/Harmonies of Creation'
+      >
         Harmonies of Creation
       </a>
     ),
@@ -74,7 +77,7 @@ export const items: MenuProps['items'] = [
   {
     key: '3',
     label: (
-      <a rel='noopener noreferrer' href='/collection/Other'>
+      <a rel='noopener noreferrer' href='/artistry/collection/Other'>
         Other
       </a>
     ),
@@ -82,7 +85,7 @@ export const items: MenuProps['items'] = [
   {
     key: '4',
     label: (
-      <a rel='noopener noreferrer' href='/collection/Portfolio'>
+      <a rel='noopener noreferrer' href='/artistry/collection/Portfolio'>
         Portfolio
       </a>
     ),
