@@ -1,15 +1,15 @@
 import { FC } from 'react';
-import Collections from '../components/Collections';
+import Header from '../components/Header';
 import About from '../components/About';
-import Hero from '../components/Hero';
+import Collections from '../components/Collections';
 
 const Home: FC = (): JSX.Element => {
   return (
-    <div id='home'>
-      <Hero />
+    <>
+      <Header />
       <About />
       <Collections />
-    </div>
+    </>
   );
 };
 

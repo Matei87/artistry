@@ -6,7 +6,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 90px;
-  background-color: #c1bdba;
+  background-color: #195c68;
   padding: 0 2rem;
 }
 
@@ -26,13 +26,14 @@ nav .main_nav {
 nav .main_nav li {
   font-size: 24px;
 }
+
 nav a {
-  color: black;
-  transition: color 2ms ease-in;
+  color: #fff;
+  transition: all 0.5s ease;
 }
 
 nav .main_nav li:hover a {
-  color: #195c68;
+  color: #c1bdba;
   cursor: pointer;
 }
 
