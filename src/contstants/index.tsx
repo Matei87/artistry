@@ -32,6 +32,7 @@ import StillLife2 from '../assets/Portfolio/Still.png';
 import Books from '../assets/Portfolio/books.png';
 
 import type { MenuProps } from 'antd';
+import { NavLink } from 'react-router-dom';
 
 export interface ICollections {
   id: number;
@@ -58,37 +59,24 @@ export const items: MenuProps['items'] = [
   {
     key: '1',
     label: (
-      <a rel='noopener noreferrer' href='/artistry/collection/Non Finito'>
-        Non Finito
-      </a>
+      <NavLink to='/NavLinkrtistry/collection/Non Finito'>Non Finito</NavLink>
     ),
   },
   {
     key: '2',
     label: (
-      <a
-        rel='noopener noreferrer'
-        href='/artistry/collection/Harmonies of Creation'
-      >
+      <NavLink to='/artistry/collection/Harmonies of Creation'>
         Harmonies of Creation
-      </a>
+      </NavLink>
     ),
   },
   {
     key: '3',
-    label: (
-      <a rel='noopener noreferrer' href='/artistry/collection/Other'>
-        Other
-      </a>
-    ),
+    label: <NavLink to='/artistry/collection/Other'>Other</NavLink>,
   },
   {
     key: '4',
-    label: (
-      <a rel='noopener noreferrer' href='/artistry/collection/Portfolio'>
-        Portfolio
-      </a>
-    ),
+    label: <NavLink to='/artistry/collection/Portfolio'>Portfolio</NavLink>,
   },
 ];
 
