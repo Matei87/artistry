@@ -4,7 +4,7 @@ import { ICollections, collections } from '../contstants';
 
 const Collections: FC = (): JSX.Element => {
   return (
-    <section className='collections'>
+    <div className='collections'>
       {collections.map(({ id, title, description, image }: ICollections) => (
         <div className='row' key={id}>
           {id % 2 ? (
@@ -34,7 +34,7 @@ const Collections: FC = (): JSX.Element => {
           )}
         </div>
       ))}
-    </section>
+    </div>
   );
 };
 

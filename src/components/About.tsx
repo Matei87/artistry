@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 const About: FC = (): JSX.Element => {
   return (
-    <section className='about'>
+    <div className='about'>
       <div className='container'>
         <div className='content'>
           <h3>I was created to create.</h3>
@@ -30,7 +30,7 @@ const About: FC = (): JSX.Element => {
           </p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

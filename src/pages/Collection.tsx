@@ -13,7 +13,7 @@ const Collection: FC = (): JSX.Element => {
   console.log(title, selectedItem);
 
   return (
-    <section className='collection'>
+    <div className='collection'>
       <div className='container'>
         <h2>{selectedItem.title}</h2>
         <hr />
@@ -41,7 +41,7 @@ const Collection: FC = (): JSX.Element => {
           ))}
         </Carousel>
       </div>
-    </section>
+    </div>
   );
 };
 
