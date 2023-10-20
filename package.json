@@ -2,6 +2,7 @@
   "name": "artistry",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://matei87.github.io/artistry/",
   "type": "module",
   "scripts": {
     "dev": "vite",

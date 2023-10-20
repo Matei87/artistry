@@ -116,8 +116,7 @@ export const collections: ICollections[] = [
   },
 ];
 
-//export const collection: Collection[] = [
-export const collection = [
+export const collection: ICollection[] = [
   {
     id: 1,
     title: 'Non Finito',
