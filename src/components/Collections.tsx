@@ -10,7 +10,7 @@ const Collections: FC = (): JSX.Element => {
           {id % 2 ? (
             <>
               <div className='img_wrapper'>
-                <img src={image} alt={title} loading='lazy' />
+                <img src={image} alt={title} />
               </div>
               <div className='card'>
                 <div className='inner'>
@@ -32,7 +32,7 @@ const Collections: FC = (): JSX.Element => {
                 </div>
               </div>
               <div className='img_wrapper'>
-                <img src={image} alt={title} loading='lazy' />
+                <img src={image} alt={title} />
               </div>
             </>
           )}

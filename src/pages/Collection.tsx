@@ -44,7 +44,7 @@ const Collection: FC = (): JSX.Element => {
         <Carousel {...settings}>
           {selectedItem.paintings.map(({ id, image, title, size }) => (
             <div key={id}>
-              <img src={image} alt={title} loading='lazy' />
+              <img src={image} alt={title} />
               <div className='details'>
                 {title && <h2>{title}</h2>}
                 {size && <p>{size}</p>}
