@@ -9,13 +9,15 @@ const Collections: FC = (): JSX.Element => {
         <div className='row' key={id}>
           {id % 2 ? (
             <>
-              <img src={image} alt={title} loading='lazy' />
+              <div className='img_wrapper'>
+                <img src={image} alt={title} loading='lazy' />
+              </div>
               <div className='card'>
                 <div className='inner'>
                   <h2>{title}</h2>
                   <hr />
                   <p>{description}</p>
-                  <Link to={`/artistry/collection/${title}`}>See more</Link>
+                  <Link to={`/artistry/collection/${title}`}>SEE MORE</Link>
                 </div>
               </div>
             </>
@@ -26,10 +28,12 @@ const Collections: FC = (): JSX.Element => {
                   <h2>{title}</h2>
                   <hr />
                   <p>{description}</p>
-                  <Link to={`/artistry/collection/${title}`}>See more</Link>
+                  <Link to={`/artistry/collection/${title}`}>SEE MORE</Link>
                 </div>
               </div>
-              <img src={image} alt={title} loading='lazy' />
+              <div className='img_wrapper'>
+                <img src={image} alt={title} loading='lazy' />
+              </div>
             </>
           )}
         </div>

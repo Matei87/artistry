@@ -5,14 +5,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 90px;
+  height: 5.625rem;
   background-color: #195c68;
   padding: 0 2rem;
 }
 
 nav .logo {
-  width: 70px;
-  height: 70px;
+  width: 4.375rem;
+  height: 4.375rem;
 }
 
 nav .main_nav {
@@ -24,7 +24,7 @@ nav .main_nav {
 }
 
 nav .main_nav li {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 nav a {
@@ -45,11 +45,6 @@ nav .main_nav li:hover a {
   top: 3px;
 }
 
-.burger_menu {
-  display: none;
-  visibility: hidden;
-}
-
 .ant-dropdown {
   border: 1px solid #195c68;
 }
@@ -60,7 +55,7 @@ nav .main_nav li:hover a {
 }
 
 .ant-dropdown ul li a {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #195c68 !important;
 }
 
@@ -71,27 +66,4 @@ nav .main_nav li:hover a {
 .ant-dropdown ul li a:hover {
   cursor: pointer;
   color: #fff !important;
-}
-
-@media (max-width: 768px) {
-  .burger_menu {
-    display: block;
-    visibility: visible;
-  }
-  .burger_menu,
-  .burger_menu span,
-  .burger_menu span svg,
-  .burger_menu_close span svg,
-  .burger_menu_close,
-  .burger_menu_close span {
-    width: 2rem !important;
-    height: 2rem !important;
-    border: none;
-    background-color: transparent;
-  }
-
-  .burger_menu:hover,
-  .burger_menu_close:hover {
-    cursor: pointer;
-  }
 }

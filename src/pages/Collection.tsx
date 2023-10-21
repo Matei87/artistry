@@ -10,26 +10,38 @@ const Collection: FC = (): JSX.Element => {
     (item) => item.title === title
   )!;
 
-  console.log(title, selectedItem);
+  const settings = {
+    dots: false,
+    autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <div className='collection'>
       <div className='container'>
         <h2>{selectedItem.title}</h2>
         <hr />
-
         {selectedItem.description.map((desc, idx) => (
           <p key={idx}>{desc}</p>
         ))}
       </div>
       <div className='carousel_wrapper'>
-        <Carousel
-          dots={false}
-          slidesToShow={3}
-          slidesToScroll={1}
-          autoplay
-          autoplaySpeed={2000}
-        >
+        <Carousel {...settings}>
           {selectedItem.paintings.map(({ id, image, title, size }) => (
             <div key={id}>
               <img src={image} alt={title} loading='lazy' />

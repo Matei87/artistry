@@ -23,11 +23,11 @@
 }
 
 .collection .container hr {
-  width: 50px;
+  width: 3.125rem;
   color: #195c68;
   padding: 1px;
   background-color: #195c68;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .collection .container p {
@@ -39,12 +39,12 @@
 
 .collection .carousel_wrapper {
   width: 90%;
-  margin: 1.25rem 0;
+  margin: 1.25rem 0 2.5rem;
 }
 
 .collection .carousel_wrapper .slick-slider {
   border: 2px solid #000;
-  height: 700px;
+  height: 43.75rem;
   width: 100%;
   padding: 1.25rem;
 }
@@ -53,7 +53,7 @@
   padding: 1rem;
 }
 .collection .carousel_wrapper .slick-slider .slick-slide img {
-  height: 500px;
+  height: 31.25rem;
   width: 100%;
   object-fit: contain;
   margin-bottom: 1.875rem;
@@ -63,7 +63,7 @@
   margin: 0 auto;
   text-align: center;
   border: 2px solid #000;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .collection .carousel_wrapper .slick-slider .slick-slide .details h2 {

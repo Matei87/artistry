@@ -1,7 +1,7 @@
 /* Header */
 header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-color: #c1bdba;
   position: relative;
@@ -10,14 +10,15 @@ header {
 }
 
 header img {
-  height: 100%;
+  height: inherit;
   width: auto;
+  object-fit: cover;
 }
 
 header h1 {
-  font-size: 100px;
-  color: white;
-  font-weight: 500;
+  font-size: 6.25rem;
+  font-weight: 400;
+  color: #fff;
 }
 
 /* ABOUT */
@@ -26,12 +27,12 @@ header h1 {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  padding: 40px 0;
+  padding: 2.5rem 0;
 }
 
 .about .container {
   background-color: #195c68;
-  padding: 40px;
+  padding: 2.5rem;
   max-width: 90%;
   flex: 1;
 }
@@ -50,8 +51,8 @@ header h1 {
 }
 
 .about .container .content h3 {
-  font-size: 53px;
-  font-weight: 500;
+  font-size: 3.3125rem;
+  font-weight: 400;
 }
 
 .about .container .content hr {
@@ -59,7 +60,7 @@ header h1 {
   color: white;
   padding: 1.3px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .about .container .content p {
@@ -72,7 +73,7 @@ header h1 {
 
 /* COLLECTIONS */
 .collections {
-  padding: 40px;
+  padding: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,18 +84,24 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   max-width: 90%;
   height: 70vh;
 }
 
-.collections .row img {
+.collections .row .img_wrapper {
   width: 50%;
+  height: 100%;
+}
+
+.collections .row .img_wrapper img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .collections .row .card {
-  padding: 40px;
+  padding: 2.5rem;
   height: 100%;
   width: 50%;
 }
@@ -121,7 +128,7 @@ header h1 {
 .collections .row .card .inner h2 {
   color: #195c68;
   font-size: 3.75rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .collections .row .card.even .inner h2 {
@@ -133,7 +140,7 @@ header h1 {
   color: #195c68;
   padding: 1.3px;
   background-color: #195c68;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 .collections .row .card.even .inner hr {
   color: #fff;
@@ -153,24 +160,20 @@ header h1 {
 }
 
 .collections .row .card .inner a {
-  margin-top: 40px;
-  min-width: 200px;
-  width: auto;
-  height: 60px;
-  letter-spacing: 0.5px;
-  line-height: 50px;
-  padding: 0 35px;
-  font-size: 15px;
-  background-color: #fff;
-  color: #000;
-  text-transform: uppercase;
-  font-weight: bolder;
-  border: 2px solid #000;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  white-space: nowrap;
+  margin-top: 2.5rem;
+  min-width: 12.5rem;
+  height: 3.75rem;
+  letter-spacing: 0.5px;
+  line-height: 3.125rem;
+  padding: 0 2.1875rem;
+  font-size: 0.9375rem;
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  border: 2px solid #000;
   transition: all 0.5s ease;
 }
 
@@ -188,4 +191,38 @@ header h1 {
 .collections .row .card.even .inner a:hover {
   background-color: #fff;
   color: #195c68;
+}
+
+@media (max-width: 1280px) {
+  header {
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 70vh;
+  }
+
+  .about .container .content {
+    padding: 1rem;
+  }
+
+  .collections .row {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 1.25rem 0;
+  }
+
+  .collections .row .img_wrapper {
+    width: 100%;
+    height: 50rem;
+  }
+
+  .collections .row .card {
+    width: 100%;
+  }
+
+  .collections .row .card .inner a {
+    margin: 2.5rem 0;
+  }
 }
