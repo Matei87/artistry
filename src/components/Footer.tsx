@@ -1,10 +1,8 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  InstagramOutlined,
-  MailOutlined,
-  FacebookOutlined,
-} from '@ant-design/icons';
+import Instagram from '../assets/instagram.svg';
+import Mail from '../assets/mail.svg';
+import Facebook from '../assets/facebook.svg';
 
 const Footer: FC = (): JSX.Element => {
   return (
@@ -25,14 +23,14 @@ const Footer: FC = (): JSX.Element => {
         </div>
         <div className='links'>
           <Link to='https://www.instagram.com'>
-            <InstagramOutlined />
+            <img src={Instagram} alt='instagram' />
             instagram.com
           </Link>
           <Link to='https://www.google.com'>
-            <MailOutlined /> contact@artistry.com
+            <img src={Mail} alt='instagram' /> contact@artistry.com
           </Link>
           <Link to='https://www.facebook.com'>
-            <FacebookOutlined /> facebook.com
+            <img src={Facebook} alt='instagram' /> facebook.com
           </Link>
         </div>
       </div>

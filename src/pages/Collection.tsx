@@ -1,7 +1,9 @@
 import { FC } from 'react';
 import { useParams } from 'react-router-dom';
 import { ICollection, collection } from '../contstants';
-import { Carousel } from 'antd';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const Collection: FC = (): JSX.Element => {
   const { title } = useParams<string>();
@@ -13,6 +15,8 @@ const Collection: FC = (): JSX.Element => {
   const settings = {
     dots: false,
     autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -41,7 +45,7 @@ const Collection: FC = (): JSX.Element => {
         ))}
       </div>
       <div className='carousel_wrapper'>
-        <Carousel {...settings}>
+        <Slider {...settings}>
           {selectedItem.paintings.map(({ id, image, title, size }) => (
             <div key={id}>
               <img src={image} alt={title} />
@@ -51,7 +55,7 @@ const Collection: FC = (): JSX.Element => {
               </div>
             </div>
           ))}
-        </Carousel>
+        </Slider>
       </div>
     </div>
   );

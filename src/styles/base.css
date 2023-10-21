@@ -25,3 +25,23 @@ li {
     font-size: 12px;
   }
 }
+
+/* SPINNER */
+.spinner {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #195c68;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  animation: spin 1s linear infinite;
+  margin: 5rem auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

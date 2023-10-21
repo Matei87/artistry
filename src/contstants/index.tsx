@@ -31,7 +31,6 @@ import StillLife from '../assets/Portfolio/Still.png';
 import StillLife2 from '../assets/Portfolio/Still.png';
 import Books from '../assets/Portfolio/books.png';
 
-import type { MenuProps } from 'antd';
 import { NavLink } from 'react-router-dom';
 
 export interface ICollections {
@@ -55,13 +54,18 @@ export interface Painting {
   size?: string;
 }
 
-export const items: MenuProps['items'] = [
+export interface Items {
+  key: number;
+  label: JSX.Element;
+}
+
+export const items: Items[] = [
   {
-    key: '1',
+    key: 1,
     label: <NavLink to='/artistry/collection/Non Finito'>Non Finito</NavLink>,
   },
   {
-    key: '2',
+    key: 2,
     label: (
       <NavLink to='/artistry/collection/Harmonies of Creation'>
         Harmonies of Creation
@@ -69,11 +73,11 @@ export const items: MenuProps['items'] = [
     ),
   },
   {
-    key: '3',
+    key: 3,
     label: <NavLink to='/artistry/collection/Other'>Other</NavLink>,
   },
   {
-    key: '4',
+    key: 4,
     label: <NavLink to='/artistry/collection/Portfolio'>Portfolio</NavLink>,
   },
 ];

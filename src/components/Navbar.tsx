@@ -1,10 +1,9 @@
-import { FC } from 'react';
+import { FC, Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import { DownOutlined } from '@ant-design/icons';
-import { Dropdown, Space } from 'antd';
-import { items } from '../contstants';
-import Logo from '../assets/logo.png';
+import DownArrow from '../assets/down.svg';
+import Logo from '../assets/art.svg';
+import { Items, items } from '../contstants';
 
 const Navbar: FC = (): JSX.Element => {
   return (
@@ -19,15 +18,16 @@ const Navbar: FC = (): JSX.Element => {
         <li>
           <NavLink to='/artistry/'>Home</NavLink>
         </li>
-        <li>
-          <Dropdown menu={{ items }}>
-            <a onClick={(e) => e.preventDefault()}>
-              <Space>
-                Collection
-                <DownOutlined className='down_button' />
-              </Space>
-            </a>
-          </Dropdown>
+        <li className='dropdown'>
+          <div className='drop'>
+            <p>Collection</p>
+            <img src={DownArrow} alt='down_arrow' />
+          </div>
+          <div className='dropdown-content'>
+            {items.map(({ key, label }: Items) => (
+              <Fragment key={key}>{label}</Fragment>
+            ))}
+          </div>
         </li>
         <li>
           <HashLink to='/artistry/#contact'>Contact</HashLink>

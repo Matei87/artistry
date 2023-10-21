@@ -27,7 +27,8 @@ nav .main_nav li {
   font-size: 1.5rem;
 }
 
-nav a {
+nav a,
+nav p {
   color: #fff;
   transition: all 0.5s ease;
 }
@@ -36,8 +37,19 @@ nav .main_nav li:hover a {
   color: #c1bdba;
   cursor: pointer;
 }
+.dropdown .drop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
 
-.down_button {
+nav li.dropdown .drop:hover p {
+  color: #c1bdba;
+}
+
+nav li.dropdown .drop img {
   width: 1rem;
   height: 1rem;
   position: relative;
@@ -45,25 +57,32 @@ nav .main_nav li:hover a {
   top: 3px;
 }
 
-.ant-dropdown {
+nav li.dropdown .dropdown-content {
   border: 1px solid #195c68;
-}
-.ant-dropdown ul {
-  border-radius: 0 !important;
-  background-color: red;
-  padding: 0 !important;
+  display: none;
+  background: #fff;
+  min-width: 160px;
+  position: absolute;
+  z-index: 1;
 }
 
-.ant-dropdown ul li a {
-  font-size: 1.5rem;
+nav li.dropdown .dropdown-content a {
+  display: block;
   color: #195c68 !important;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 1.5rem;
 }
 
-.ant-dropdown ul li:hover {
-  background-color: #195c68 !important;
-  border-radius: 0 !important;
-}
-.ant-dropdown ul li a:hover {
-  cursor: pointer;
+nav li.dropdown .dropdown-content a:hover {
+  background: #195c68;
   color: #fff !important;
+}
+
+nav li.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav li.dropdown:hover .dropbtn {
+  background: #3e8341;
 }
