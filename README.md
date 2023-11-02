@@ -1,6 +1,6 @@
 # Artistry
 
-A presentational website for a painting enthusiasts.
+A presentational website for a painting enthusiast.
 
 # Built With
 

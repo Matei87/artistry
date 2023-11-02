@@ -5,7 +5,7 @@ const About: FC = (): JSX.Element => {
     <div className='about'>
       <div className='container'>
         <div className='content'>
-          <h3>I was created to create.</h3>
+          <h3>I was created to create</h3>
           <hr />
           <p>
             I'm an artist from Portugal who has been honing in art for more than
