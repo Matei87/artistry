@@ -1,10 +1,10 @@
 # Artistry
 
-A presentational website for a passionate artist.
+A presentational website for a painting enthusiasts.
 
 # Built With
 
 - React
 - Typescript
-- Ant Design
+- React-Slick
 - Vite
