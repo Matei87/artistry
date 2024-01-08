@@ -2,13 +2,13 @@
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
-  background-color: #195c68;
+  background-color: var(--green-gray);
   justify-content: center;
   align-items: center;
 }
 
 #contact h2 {
-  color: #fff;
+  color: var(--white);
   font-size: 5rem;
   font-weight: 400;
   margin: 3.125rem 0;
@@ -16,9 +16,9 @@
 
 #contact hr {
   width: 3.125rem;
-  color: #fff;
+  color: var(--white);
   padding: 1px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 0.625rem;
 }
 
@@ -36,7 +36,7 @@
   align-items: center;
   flex-direction: column;
   min-height: 18.75rem;
-  border: 2px solid #000;
+  border: 2px solid var(--black);
   gap: 1.5rem;
   width: 50%;
   padding: 1rem;
@@ -49,7 +49,7 @@
   font-weight: 400;
   text-align: center;
   overflow: hidden;
-  color: #fff;
+  color: var(--white);
 }
 
 #contact .inner .links {
@@ -65,7 +65,7 @@
   align-items: center;
   gap: 1.25rem;
   margin: 0.9375rem 0;
-  color: #fff;
+  color: var(--white);
   white-space: nowrap;
   font-size: 2rem;
 }
@@ -79,7 +79,7 @@
   font-size: 1.2rem;
   font-weight: 300;
   font-style: italic;
-  color: #fff;
+  color: var(--white);
 }
 
 @media (max-width: 768px) {

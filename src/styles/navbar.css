@@ -6,7 +6,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 5.625rem;
-  background-color: #195c68;
+  background-color: var(--green-gray);
   padding: 0 2rem;
 }
 
@@ -29,12 +29,12 @@ nav .main_nav li {
 
 nav a,
 nav p {
-  color: #fff;
+  color: var(--white);
   transition: all 0.5s ease;
 }
 
 nav .main_nav li:hover a {
-  color: #c1bdba;
+  color: var(--gray);
   cursor: pointer;
 }
 .dropdown .drop {
@@ -46,7 +46,7 @@ nav .main_nav li:hover a {
 }
 
 nav li.dropdown .drop:hover p {
-  color: #c1bdba;
+  color: var(--gray);
 }
 
 nav li.dropdown .drop img {
@@ -58,9 +58,9 @@ nav li.dropdown .drop img {
 }
 
 nav li.dropdown .dropdown-content {
-  border: 1px solid #195c68;
+  border: 1px solid var(--green-gray);
   display: none;
-  background: #fff;
+  background: var(--white);
   min-width: 160px;
   position: absolute;
   z-index: 1;
@@ -68,15 +68,15 @@ nav li.dropdown .dropdown-content {
 
 nav li.dropdown .dropdown-content a {
   display: block;
-  color: #195c68 !important;
+  color: var(--green-gray) !important;
   text-decoration: none;
   padding: 0.5rem;
   font-size: 1.5rem;
 }
 
 nav li.dropdown .dropdown-content a:hover {
-  background: #195c68;
-  color: #fff !important;
+  background: var(--green-gray);
+  color: var(--white) !important;
 }
 
 nav li.dropdown:hover .dropdown-content {
@@ -84,5 +84,11 @@ nav li.dropdown:hover .dropdown-content {
 }
 
 nav li.dropdown:hover .dropbtn {
-  background: #3e8341;
+  background: var(--green);
+}
+
+nav li svg {
+  cursor: pointer;
+  /* border: none;
+  background: transparent; */
 }

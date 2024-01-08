@@ -10,6 +10,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
   line-height: 1.5;
+  transition: all 0.3 ease;
 }
 
 a {
@@ -29,7 +30,7 @@ li {
 /* SPINNER */
 .spinner {
   border: 10px solid #f3f3f3;
-  border-top: 10px solid #195c68;
+  border-top: 10px solid var(--green-gray);
   border-radius: 50%;
   width: 5rem;
   height: 5rem;
@@ -44,4 +45,25 @@ li {
   100% {
     transform: rotate(360deg);
   }
+}
+
+body[data-theme='light'] {
+  --white: #fff;
+  --black: #000;
+  --gray: #c1bdba;
+  --green: #3e8341;
+  --green-gray: #195c68;
+}
+
+body[data-theme='dark'] {
+  background: #222;
+  --white: #ececec;
+  --black: #d8d8d8;
+  --gray: #6f6f6f;
+  --green: #f0f0f0;
+  --green-gray: #006241;
+}
+
+body[data-theme='dark'] img {
+  filter: brightness(0.8);
 }
