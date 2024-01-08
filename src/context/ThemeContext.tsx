@@ -19,9 +19,9 @@ const initialstate: ThemeProviderState = {
 const ThemeContext = createContext<ThemeProviderState>(initialstate);
 
 const getTheme = () => {
-  const theme = localStorage.getItem('theme');
+  const theme = localStorage.getItem('artistry-theme');
   if (!theme) {
-    localStorage.setItem('theme', 'light');
+    localStorage.setItem('artistry-theme', 'light');
     return 'light';
   } else {
     return theme;
@@ -33,7 +33,7 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     const refreshTheme = () => {
-      localStorage.setItem('theme', theme);
+      localStorage.setItem('artistry-theme', theme);
       document.querySelector('body')?.setAttribute('data-theme', theme);
     };
 
