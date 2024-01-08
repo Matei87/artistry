@@ -1,6 +1,22 @@
-import { useEffect, createContext, useState } from 'react';
+import {
+  useEffect,
+  createContext,
+  useState,
+  Dispatch,
+  SetStateAction,
+} from 'react';
 
-const ThemeContext = createContext(null);
+type ThemeProviderState = {
+  theme: string;
+  setTheme: Dispatch<SetStateAction<string>>;
+};
+
+const initialstate: ThemeProviderState = {
+  theme: 'light',
+  setTheme: () => null,
+};
+
+const ThemeContext = createContext<ThemeProviderState>(initialstate);
 
 const getTheme = () => {
   const theme = localStorage.getItem('theme');
@@ -12,7 +28,7 @@ const getTheme = () => {
   }
 };
 
-const ThemeProvider = ({ children }) => {
+const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [theme, setTheme] = useState(getTheme);
 
   useEffect(() => {
