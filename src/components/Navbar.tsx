@@ -35,7 +35,7 @@ const Navbar: FC = (): JSX.Element => {
         <li>
           <HashLink to='/artistry/#contact'>Contact</HashLink>
         </li>
-        <li>
+        <li className='theme'>
           {theme === 'light' ? (
             <svg
               stroke='currentColor'

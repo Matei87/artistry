@@ -10,7 +10,6 @@ body {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  transition: all 0.3 ease;
 }
 
 a {
@@ -53,15 +52,18 @@ body[data-theme='light'] {
   --gray: #c1bdba;
   --green: #3e8341;
   --green-gray: #195c68;
+  background: #fff;
+  transition: all 0.25s linear;
 }
 
 body[data-theme='dark'] {
-  background: #222;
   --white: #ececec;
   --black: #d8d8d8;
   --gray: #6f6f6f;
   --green: #f0f0f0;
   --green-gray: #006241;
+  background: #222;
+  transition: all 0.25s linear;
 }
 
 body[data-theme='dark'] img {

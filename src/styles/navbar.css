@@ -87,8 +87,19 @@ nav li.dropdown:hover .dropbtn {
   background: var(--green);
 }
 
-nav li svg {
+nav li.theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.25s linear;
   cursor: pointer;
-  /* border: none;
-  background: transparent; */
+}
+
+nav li.theme:hover {
+  border-radius: 50%;
+  background-color: #e2e2e2 !important;
 }
